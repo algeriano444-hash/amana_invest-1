@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "packages": "Packages",
+    "education": "Education",
+    "investment": "Investment",
+    "security": "Security",
+    "contact": "Contact"
+  },
+  "auth": {
+    "dashboard": "My Dashboard",
+    "login": "Sign In",
+    "signup": "Create Account",
+    "logout": "Sign Out"
+  },
+  "header": {
+    "brand": "Amana",
+    "tagline": "INVEST"
+  },
+  "footer": {
+    "tagline": "Digital Investment Platform",
+    "description": "We connect capital with real projects through documented contracts, based on the principle of profit and loss sharing with complete transparency.",
+    "launch": "Official Launch: September 01, 2026",
+    "links": "Links",
+    "partners": "Partners",
+    "copyright": "All rights reserved",
+    "links_projects": "Projects",
+    "links_investment": "Investment",
+    "links_contact": "Contact Us",
+    "partners_banks": "Financial Institutions",
+    "partners_council": "Specialized Advisory Bodies"
+  },
+  "projects": {
+    "title": "Real Projects, Safe Investment",
+    "allProjects": "All Projects",
+    "description": "Choose from {count} vetted projects, distributed across multiple sectors and regions.",
+    "noProjects": "No projects in this category at the moment.",
+    "categories": {
+      "all": "All",
+      "general": "General",
+      "startup": "Startup",
+      "medium": "Medium Enterprise",
+      "freelance": "Freelance"
+    },
+    "buy": "Buy Shares / Invest",
+    "category": "Category",
+    "capital": "Capital",
+    "shares": "Number of Shares",
+    "sharePrice": "Share Price",
+    "sold": "Sold",
+    "status": "Status",
+    "description_field": "Description",
+    "field": "Field"
+  },
+  "home": {
+    "hero_tagline": "Smart Investment.. According to Sharia Principles.",
+    "hero_title": "Invest with Confidence",
+    "hero_subtitle": "Amana Invest connects your capital with real projects, through capital partnership and equity ownership — with documented and transparent contracts.",
+    "cta_explore": "Browse Projects",
+    "cta_options": "Available Options",
+    "live_stats": "Live Statistics from the Platform",
+    "investment_types": "Investment Structures",
+    "investment_title": "Invest in Documented and Transparent Projects",
+    "investment_subtitle": "Every transaction on the platform is documented with a trusted and transparent electronic contract.",
+    "partnership_title": "Capital Partnership",
+    "partnership_desc": "You contribute an amount of money to the project, profits are divided according to agreement, and losses are borne according to the contribution ratio.",
+    "partnership_points": ["Documented financial contribution", "Profits according to agreement", "Losses according to ratio", "Contract between project partners"],
+    "ownership_title": "Equity Ownership",
+    "ownership_desc": "You buy shares representing actual ownership in the project, at a fixed value, with the possibility of reselling the shares later.",
+    "ownership_points": ["Real ownership through shares", "Fixed share value", "Profits according to agreement", "Resell shares later"],
+    "featured": "Featured Projects",
+    "featured_title": "Real Projects Open for Subscription",
+    "view_all": "View All",
+    "view_all_projects": "View All Projects",
+    "cta_title": "Start Your Investment Journey",
+    "cta_subtitle": "Join thousands of investors and project founders on a transparent and secure investment platform.",
+    "btn_investor": "Create Investor Account",
+    "btn_founder": "Project Founder Account"
+  },
+  "packages": {
+    "title": "Packages",
+    "description": "Choose the package that suits your investment journey."
+  },
+  "education": {
+    "title": "Learn Investment Step by Step",
+    "academy": "Amana Academy for Investment",
+    "description": "Educational packages covering investment basics, financing mechanisms, portfolio building, and financial statements reading — supervised by specialists and financial experts.",
+    "warning": "Investing without understanding financing mechanisms can lead to financial mistakes. We provide you with knowledge before we provide you with opportunity."
+  },
+  "about": {
+    "title": "Investment at Amana",
+    "subtitle": "Documented operating procedures, transparent rules and real projects.",
+    "description": "Amana Invest is a digital investment platform that connects investors with project owners within a financial system based on participation and equity ownership, with documented and transparent electronic contracts.",
+    "mission": "Vision",
+    "mission_desc": "Build a global investment platform covering Algeria, the Maghreb, the Gulf countries and Asian countries.",
+    "sectors": "Available Sectors",
+    "values": "Our Advantages",
+    "values_transparency": "Complete Transparency",
+    "values_contracts": "Documented Contracts",
+    "values_projects": "Real Projects",
+    "values_ownership": "Clear Ownership",
+    "values_profits": "Fair Profit Shares"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "We are here to help you start your investment."
+  },
+  "contract": {
+    "title": "Contract",
+    "partnership": "Capital Partnership",
+    "ownership": "Equity Ownership",
+    "project": "Project",
+    "shares_bought": "Number of Shares Purchased",
+    "share_value": "Share Value",
+    "total_amount": "Total Amount",
+    "start_date": "Contract Start Date",
+    "expected_end": "Expected End",
+    "duration": "Contract Duration",
+    "months": "Months",
+    "profits_losses": "Profits and losses are determined according to the agreement within the formal contract and actual project results."
+  },
+  "security": {
+    "title": "Security and Verification Framework",
+    "verification": "Verification",
+    "guarantees": "Guarantees",
+    "documents": "Documents",
+    "verification_status": "Verification Status",
+    "under_review": "Under Review",
+    "missing_documents": "Missing Documents",
+    "rejected": "Rejected",
+    "verified": "Verified/Approved",
+    "personal_guarantees": "Personal Guarantees",
+    "financial_guarantees": "Financial Guarantees",
+    "commercial_guarantees": "Commercial Guarantees",
+    "technical_guarantees": "Technical Guarantees",
+    "verification_progress": "Verification Progress"
+  },
+  "language": {
+    "ar": "العربية",
+    "en": "English",
+    "fr": "Français",
+    "switch": "Switch Language"
+  }
+}

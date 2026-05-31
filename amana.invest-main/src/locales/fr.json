@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "packages": "Forfaits",
+    "education": "Éducation",
+    "investment": "Investissement",
+    "security": "Sécurité",
+    "contact": "Contact"
+  },
+  "auth": {
+    "dashboard": "Mon Tableau de Bord",
+    "login": "Se Connecter",
+    "signup": "Créer un Compte",
+    "logout": "Se Déconnecter"
+  },
+  "header": {
+    "brand": "Amana",
+    "tagline": "INVEST"
+  },
+  "footer": {
+    "tagline": "Plateforme d'Investissement Numérique",
+    "description": "Nous connectons les capitaux aux projets réels par des contrats documentés, sur la base du partage des profits et des pertes avec une transparence complète.",
+    "launch": "Lancement Officiel : 01 Septembre 2026",
+    "links": "Liens",
+    "partners": "Partenaires",
+    "copyright": "Tous droits réservés",
+    "links_projects": "Projets",
+    "links_investment": "Investissement",
+    "links_contact": "Nous Contacter",
+    "partners_banks": "Institutions Financières",
+    "partners_council": "Organismes Consultatifs Spécialisés"
+  },
+  "projects": {
+    "title": "Vrais Projets, Investissement Sécurisé",
+    "allProjects": "Tous les Projets",
+    "description": "Choisissez parmi {count} projets vérifiés, répartis sur plusieurs secteurs et régions.",
+    "noProjects": "Aucun projet dans cette catégorie pour le moment.",    "categories": {
+      "all": "Tous",
+      "general": "Général",
+      "startup": "Startup",
+      "medium": "Entreprise Moyenne",
+      "freelance": "Travail Indépendant"
+    },    "buy": "Acheter des Parts / Investir",
+    "category": "Catégorie",
+    "capital": "Capital",
+    "shares": "Nombre de Parts",
+    "sharePrice": "Prix de la Part",
+    "sold": "Vendu",
+    "status": "Statut",
+    "description_field": "Description",
+    "field": "Domaine"
+  },
+  "home": {
+    "hero_tagline": "Investissement Intelligent.. Selon les Principes de la Charia.",
+    "hero_title": "Investissez en Confiance",
+    "hero_subtitle": "Amana Invest connecte votre capital à des projets réels, par le partenariat en capital et la propriété des parts — avec des contrats documentés et transparents.",
+    "cta_explore": "Parcourir les Projets",
+    "cta_options": "Options Disponibles",
+    "live_stats": "Statistiques en Direct de la Plateforme",
+    "investment_types": "Structures d'Investissement",
+    "investment_title": "Investissez dans des Projets Documentés et Transparents",
+    "investment_subtitle": "Chaque transaction sur la plateforme est documentée avec un contrat électronique fiable et transparent.",
+    "partnership_title": "Partenariat en Capital",
+    "partnership_desc": "Vous contribuez un montant d'argent au projet, les bénéfices sont divisés selon l'accord, et les pertes sont supportées selon la proportion de la contribution.",
+    "partnership_points": ["Contribution financière documentée", "Bénéfices selon l'accord", "Pertes selon la proportion", "Contrat entre partenaires du projet"],
+    "ownership_title": "Propriété des Parts",
+    "ownership_desc": "Vous achetez des parts représentant une propriété réelle dans le projet, à une valeur fixe, avec la possibilité de revendre les parts ultérieurement.",
+    "ownership_points": ["Propriété réelle par des parts", "Valeur de part fixe", "Bénéfices selon l'accord", "Revendre les parts ultérieurement"],
+    "featured": "Projets Vedettes",
+    "featured_title": "Vrais Projets Ouverts à la Souscription",
+    "view_all": "Voir Tous",
+    "view_all_projects": "Voir Tous les Projets",
+    "cta_title": "Commencez Votre Parcours d'Investissement",
+    "cta_subtitle": "Rejoignez des milliers d'investisseurs et de fondateurs de projets sur une plateforme d'investissement transparente et sécurisée.",
+    "btn_investor": "Créer un Compte Investisseur",
+    "btn_founder": "Compte Fondateur de Projet"
+  },
+  "packages": {
+    "title": "Forfaits",
+    "description": "Choisissez le forfait qui convient à votre parcours d'investissement."
+  },
+  "education": {
+    "title": "Apprenez à Investir Étape par Étape",
+    "academy": "Académie Amana pour l'Investissement",
+    "description": "Des forfaits éducatifs couvrant les bases de l'investissement, les mécanismes de financement, la création de portefeuille et la lecture des états financiers — supervisés par des spécialistes et des experts financiers.",
+    "warning": "Investir sans comprendre les mécanismes de financement peut mener à des erreurs financières. Nous vous fournissons les connaissances avant de vous fournir l'opportunité."
+  },
+  "about": {
+    "title": "Investissement chez Amana",
+    "subtitle": "Procédures opérationnelles documentées, règles transparentes et projets réels.",
+    "description": "Amana Invest est une plateforme d'investissement numérique qui connecte les investisseurs aux propriétaires de projets dans un système financier basé sur la participation et la propriété des parts, avec des contrats électroniques documentés et transparents.",
+    "mission": "Vision",
+    "mission_desc": "Construire une plateforme d'investissement mondiale couvrant l'Algérie, le Maghreb, les pays du Golfe et les pays asiatiques.",
+    "sectors": "Secteurs Disponibles",
+    "values": "Nos Avantages",
+    "values_transparency": "Transparence Complète",
+    "values_contracts": "Contrats Documentés",
+    "values_projects": "Projets Réels",
+    "values_ownership": "Propriété Claire",
+    "values_profits": "Partages des Profits Équitables"
+  },
+  "contact": {
+    "title": "Nous Contacter",
+    "description": "Nous sommes là pour vous aider à commencer votre investissement."
+  },
+  "contract": {
+    "title": "Contrat",
+    "partnership": "Partenariat en Capital",
+    "ownership": "Propriété des Parts",
+    "project": "Projet",
+    "shares_bought": "Nombre de Parts Achetées",
+    "share_value": "Valeur de la Part",
+    "total_amount": "Montant Total",
+    "start_date": "Date de Début du Contrat",
+    "expected_end": "Fin Prévue",
+    "duration": "Durée du Contrat",
+    "months": "Mois",
+    "profits_losses": "Les profits et les pertes sont déterminés selon l'accord dans le contrat formel et les résultats réels du projet."
+  },  "security": {
+    "title": "Cadre de Sécurité et de Vérification",
+    "verification": "Vérification",
+    "guarantees": "Garanties",
+    "documents": "Documents",
+    "verification_status": "Statut de Vérification",
+    "under_review": "En Cours d'Examen",
+    "missing_documents": "Documents Manquants",
+    "rejected": "Rejeté",
+    "verified": "Vérifié/Approuvé",
+    "personal_guarantees": "Garanties Personnelles",
+    "financial_guarantees": "Garanties Financières",
+    "commercial_guarantees": "Garanties Commerciales",
+    "technical_guarantees": "Garanties Techniques",
+    "verification_progress": "Progrès de Vérification"
+  },  "language": {
+    "ar": "العربية",
+    "en": "English",
+    "fr": "Français",
+    "switch": "Changer de Langue"
+  }
+}

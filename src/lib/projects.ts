@@ -32,13 +32,12 @@ export interface TechnicalGuarantee {
   licensePath?: string;
 }
 
-export interface Guarantee {
-  id: string;
-  type: GuaranteeType;
-  details: PersonalGuarantee | FinancialGuarantee | CommercialGuarantee | TechnicalGuarantee;
-  documentUrl?: string;
-  verificationDate?: string;
-}
+export type Guarantee =
+  | { id: string; type: "Personal"; details: PersonalGuarantee; documentUrl?: string; verificationDate?: string; }
+  | { id: string; type: "Financial"; details: FinancialGuarantee; documentUrl?: string; verificationDate?: string; }
+  | { id: string; type: "Commercial"; details: CommercialGuarantee; documentUrl?: string; verificationDate?: string; }
+  | { id: string; type: "Technical"; details: TechnicalGuarantee; documentUrl?: string; verificationDate?: string; };
+
 
 export interface ProjectVerification {
   status: VerificationStatus;
@@ -521,10 +520,10 @@ export function getProjectVerificationProgress(verification?: ProjectVerificatio
   // Add status progress
   let statusScore = 0;
   switch (verification.status) {
-    case "Verified/Approved": statusScore = 100;
-    case "Under Review": statusScore = 50;
-    case "Missing Documents": statusScore = 25;
-    default: statusScore = 0;
+    case "Verified/Approved": statusScore = 100; break;
+    case "Under Review": statusScore = 50; break;
+    case "Missing Documents": statusScore = 25; break;
+    default: statusScore = 0; break;
   }
   
   return Math.round((completed / total * 70) + (statusScore * 0.3));
@@ -532,16 +531,17 @@ export function getProjectVerificationProgress(verification?: ProjectVerificatio
 
 export function getGuaranteesByType(guarantees: Guarantee[] | undefined, type: GuaranteeType): Guarantee[] {
   if (!guarantees) return [];
-  return guarantees.filter(g => g.type === type);
+  return guarantees.filter(g => g.type === type) as Guarantee[];
 }
 
 export function getTotalGuaranteeValue(guarantees: Guarantee[] | undefined): number {
   if (!guarantees) return 0;
   return guarantees.reduce((sum, g) => {
-    if (g.details.type === "escrow" || g.details.type === "equipment_mortgage" || g.details.type === "customer_contracts" || g.details.type === "purchase_orders") {
+    if (g.type === "Financial" || g.type === "Commercial") {
       return sum + (g.details.value || 0);
     }
     return sum;
   }, 0);
 }
+
 

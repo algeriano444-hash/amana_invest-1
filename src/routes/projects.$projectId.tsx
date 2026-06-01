@@ -52,7 +52,7 @@ export const Route = createFileRoute("/projects/$projectId")({
 });
 
 function ProjectDetail() {
-  const { project } = Route.useLoaderData();
+  const { project } = Route.useLoaderData() as any;
   const [shares, setShares] = useState(1);
   const [submitting, setSubmitting] = useState(false);
   const [confirmOpen, setConfirmOpen] = useState(false);

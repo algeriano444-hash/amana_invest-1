@@ -97,79 +97,75 @@ export function ProjectGuaranteesDisplay({
 
 function GuaranteeCard({ guarantee }: { guarantee: Guarantee }) {
   const renderDetails = () => {
-    const { details } = guarantee;
-    
     switch (guarantee.type) {
-      case "Personal":
-        if ("guarantor" in details) {
-          return (
-            <div className="space-y-1 text-sm">
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">النوع:</span>
-                <span className="font-semibold">{details.type === "legal_pledge" ? "تعهد قانوني" : "ضامن شخصي"}</span>
-              </div>
-              {details.guarantor && (
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">الضامن:</span>
-                  <span className="font-semibold">{details.guarantor}</span>
-                </div>
-              )}
+      case "Personal": {
+        const details = guarantee.details;
+        return (
+          <div className="space-y-1 text-sm">
+            <div className="flex justify-between">
+              <span className="text-muted-foreground">النوع:</span>
+              <span className="font-semibold">{details.type === "legal_pledge" ? "تعهد قانوني" : "ضامن شخصي"}</span>
             </div>
-          );
-        }
-        break;
-
-      case "Financial":
-        if ("value" in details) {
-          return (
-            <div className="space-y-1 text-sm">
+            {details.guarantor && (
               <div className="flex justify-between">
-                <span className="text-muted-foreground">النوع:</span>
-                <span className="font-semibold">
-                  {details.type === "escrow" ? "حساب ضمان" : "رهن معدات"}
-                </span>
+                <span className="text-muted-foreground">الضامن:</span>
+                <span className="font-semibold">{details.guarantor}</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">القيمة:</span>
-                <span className="font-semibold">{new Intl.NumberFormat("ar-DZ").format(details.value)} دج</span>
-              </div>
-              {details.institution && (
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">المؤسسة:</span>
-                  <span className="font-semibold">{details.institution}</span>
-                </div>
-              )}
+            )}
+          </div>
+        );
+      }
+ 
+      case "Financial": {
+        const details = guarantee.details;
+        return (
+          <div className="space-y-1 text-sm">
+            <div className="flex justify-between">
+              <span className="text-muted-foreground">النوع:</span>
+              <span className="font-semibold">
+                {details.type === "escrow" ? "حساب ضمان" : "رهن معدات"}
+              </span>
             </div>
-          );
-        }
-        break;
-
-      case "Commercial":
-        if ("value" in details) {
-          return (
-            <div className="space-y-1 text-sm">
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">النوع:</span>
-                <span className="font-semibold">
-                  {details.type === "customer_contracts" ? "عقود العملاء" : "أوامر الشراء"}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">القيمة:</span>
-                <span className="font-semibold">{new Intl.NumberFormat("ar-DZ").format(details.value)} دج</span>
-              </div>
-              {details.counterparty && (
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">الطرف الآخر:</span>
-                  <span className="font-semibold">{details.counterparty}</span>
-                </div>
-              )}
+            <div className="flex justify-between">
+              <span className="text-muted-foreground">القيمة:</span>
+              <span className="font-semibold">{new Intl.NumberFormat("ar-DZ").format(details.value)} دج</span>
             </div>
-          );
-        }
-        break;
-
-      case "Technical":
+            {details.institution && (
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">المؤسسة:</span>
+                <span className="font-semibold">{details.institution}</span>
+              </div>
+            )}
+          </div>
+        );
+      }
+ 
+      case "Commercial": {
+        const details = guarantee.details;
+        return (
+          <div className="space-y-1 text-sm">
+            <div className="flex justify-between">
+              <span className="text-muted-foreground">النوع:</span>
+              <span className="font-semibold">
+                {details.type === "customer_contracts" ? "عقود العملاء" : "أوامر الشراء"}
+              </span>
+            </div>
+            <div className="flex justify-between">
+              <span className="text-muted-foreground">القيمة:</span>
+              <span className="font-semibold">{new Intl.NumberFormat("ar-DZ").format(details.value)} دج</span>
+            </div>
+            {details.counterparty && (
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">الطرف الآخر:</span>
+                <span className="font-semibold">{details.counterparty}</span>
+              </div>
+            )}
+          </div>
+        );
+      }
+ 
+      case "Technical": {
+        const details = guarantee.details;
         return (
           <div className="space-y-1 text-sm">
             <div className="flex justify-between">
@@ -184,7 +180,8 @@ function GuaranteeCard({ guarantee }: { guarantee: Guarantee }) {
             </div>
           </div>
         );
-
+      }
+ 
       default:
         return null;
     }

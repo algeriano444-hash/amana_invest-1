@@ -17,8 +17,11 @@ export function AnimatedNumber({
   separator?: string;
   className?: string;
 }) {
+  // Fix for SSR environments where react-countup might be imported as an object with a default property
+  const CountUpComponent = (CountUp as any).default || CountUp;
+
   return (
-    <CountUp
+    <CountUpComponent
       end={value}
       duration={duration}
       decimals={decimals}
@@ -30,3 +33,4 @@ export function AnimatedNumber({
     />
   );
 }
+
